@@ -64,6 +64,32 @@
     <li>No selling, sharing, or transferring of data to anyone.</li>
   </ul>
 
+  <h2>How we protect your data</h2>
+  <p>Septimana protects your calendar data and sign-in credentials using the following
+  measures:</p>
+  <ul>
+    <li><strong>Encryption in transit.</strong> All communication with the Google Calendar API
+    is performed over HTTPS using TLS. Your calendar data is never transmitted over an
+    unencrypted connection.</li>
+    <li><strong>Encrypted storage at rest.</strong> OAuth access and refresh tokens are stored
+    in the operating system's dedicated secure credential store — the Android Keystore
+    (via encrypted storage) on Android and the Keychain on iOS — which is encrypted and,
+    on supported devices, hardware-backed.</li>
+    <li><strong>On-device only, no server exposure.</strong> Because Septimana has no backend,
+    your data is never stored on, processed by, or exposed to any server we operate. There is
+    no central database that could be breached.</li>
+    <li><strong>Operating-system sandboxing.</strong> The local calendar cache and widget data
+    are held in the app's private, OS-enforced sandbox, isolated from other apps on the device.</li>
+    <li><strong>Data minimization.</strong> Septimana requests read-only access
+    (<code>calendar.readonly</code>) and retrieves only the calendar information needed to display
+    your week. It cannot create, modify, or delete your calendar data.</li>
+    <li><strong>No third-party processors.</strong> Your data is not shared with any third-party
+    service, sub-processor, or analytics provider.</li>
+    <li><strong>User-controlled access.</strong> You can revoke Septimana's access to your
+    calendar at any time (see “Data retention and deletion” below), which immediately and
+    permanently ends the app's ability to read your data.</li>
+  </ul>
+
   <h2>Google API Services</h2>
   <p>Septimana's use and transfer of information received from Google APIs adheres to the
   <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
@@ -118,6 +144,32 @@
     <li>Ei analytiikkaa, seurantaa eikä mainos-SDK:ita.</li>
     <li>Ei käyttäjätilejä meillä; emme voi tunnistaa sinua.</li>
     <li>Tietoja ei myydä, jaeta eikä siirretä kenellekään.</li>
+  </ul>
+
+  <h2>Kuinka suojaamme tietosi</h2>
+  <p>Septimana suojaa kalenteritietosi ja kirjautumistunnisteesi seuraavin keinoin:</p>
+  <ul>
+    <li><strong>Salaus siirron aikana.</strong> Kaikki yhteydet Google Calendar -rajapintaan
+    tapahtuvat HTTPS:n yli TLS-salauksella. Kalenteritietojasi ei koskaan siirretä
+    salaamattoman yhteyden yli.</li>
+    <li><strong>Salattu tallennus levossa.</strong> OAuth-käyttö- ja päivitystunnisteet
+    tallennetaan käyttöjärjestelmän erilliseen suojattuun tunnistesäilöön — Androidilla
+    Android Keystore (salatussa säilössä) ja iOS:llä Keychain — joka on salattu ja tuetuilla
+    laitteilla laitteistopohjaisesti suojattu.</li>
+    <li><strong>Vain laitteella, ei palvelinaltistusta.</strong> Koska Septimanalla ei ole
+    taustapalvelinta, tietojasi ei koskaan tallenneta, käsitellä eikä altisteta millekään
+    hallinnoimallemme palvelimelle. Ei ole keskitettyä tietokantaa, joka voitaisiin murtaa.</li>
+    <li><strong>Käyttöjärjestelmän hiekkalaatikko.</strong> Paikallinen kalenterivälimuisti ja
+    widget-tiedot säilytetään sovelluksen yksityisessä, käyttöjärjestelmän eristämässä
+    hiekkalaatikossa, erillään laitteen muista sovelluksista.</li>
+    <li><strong>Tietojen minimointi.</strong> Septimana pyytää vain lukuoikeuden
+    (<code>calendar.readonly</code>) ja hakee ainoastaan viikkonäkymän näyttämiseen tarvittavat
+    kalenteritiedot. Se ei voi luoda, muokata eikä poistaa kalenteritietojasi.</li>
+    <li><strong>Ei kolmannen osapuolen käsittelijöitä.</strong> Tietojasi ei jaeta millekään
+    kolmannen osapuolen palvelulle, alikäsittelijälle tai analytiikkapalvelulle.</li>
+    <li><strong>Käyttäjän hallitsema pääsy.</strong> Voit perua Septimanan pääsyn kalenteriisi
+    milloin tahansa (ks. “Tietojen säilytys ja poisto” alla), mikä päättää välittömästi ja
+    pysyvästi sovelluksen kyvyn lukea tietojasi.</li>
   </ul>
 
   <h2>Tietojen säilytys ja poisto</h2>
